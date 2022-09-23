@@ -3,7 +3,7 @@
     <body>
         <h1>PacMen</h1>
         <h2><span style='font-size:50px;'>&#10024;</span>Description:</h2>
-        <p>This is the PacMen exercise from week 7 of MIT EXPro. In this exercise I made a factory of PacMen who slowly bounce across the screen.</p>
+        <p>This is the PacMen exercise from week 7 of MIT xPRO. In this exercise I made a factory of PacMen who slowly bounce across the screen.</p>
         <h2><span style='font-size:50px;'>&#128187;</span>How To Run:</h2>
         <p>Simply open the HTML file.</p>
         <h2><span style='font-size:50px;'>&#128679;</span>Roadmap to Future Improvements:</h2>

@@ -7,7 +7,7 @@
         <h2><span style='font-size:50px;'>&#128187;</span>How To Run:</h2>
         <p>Simply open the HTML file.</p>
         <h2><span style='font-size:50px;'>&#128679;</span>Roadmap to Future Improvements:</h2>
-        <p>I would like to work a bit more on this and make the PacMen move back across the screen.</p>
+        <p>I would like to work a bit more on this and make the PacMen move back across the screen, always looking forward.</p>
         <h2><span style='font-size:50px;'>&#128220;</span>License:</h2>
 <p>MIT License<br /></p> 
 

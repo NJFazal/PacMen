@@ -5,9 +5,9 @@
         <h2><span style='font-size:50px;'>&#10024;</span>Description:</h2>
         <p>This is the PacMen exercise from week 7 of MIT xPRO. In this exercise I made a factory of PacMen who slowly bounce across the screen.</p>
         <h2><span style='font-size:50px;'>&#128187;</span>How To Run:</h2>
-        <p>Simply open the HTML file.</p>
+        <p>Simply open the HTML file and click the buttons. The first will make as many Pacmen as you wish and the second will let them animate.</p>
         <h2><span style='font-size:50px;'>&#128679;</span>Roadmap to Future Improvements:</h2>
-        <p>I would like to work a bit more on this and make the PacMen move back across the screen, always looking forward.</p>
+        <p>I would like to work a bit more on this and make the PacMen move back across the screen, always looking forward in the direction that they are facing.</p>
         <h2><span style='font-size:50px;'>&#128220;</span>License:</h2>
 <p>MIT License<br /></p> 
 

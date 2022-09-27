@@ -1,4 +1,3 @@
-<script>
 let pos = 0;
 const pacArray = [
   ['PacMan1.png', 'PacMan2.png'],
@@ -69,4 +68,4 @@ function makeOne() {
 if (typeof module !== 'undefined') {
   module.exports = { checkCollisions, update, pacMen };
 }
-</script>
+

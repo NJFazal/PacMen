@@ -1,27 +1,25 @@
 <html>
 
-<head>
-    <title>Pacmen</title>
-</head>
-
 <body>
     <div id='game'>
         <button onclick='makeOne()' width='200' height='30'>Add PacMan</button>
         <button onclick='update()' width='200' height='30'>Start Game</button>
     </div>
 
-    <script src="./pacmen.js"></script>
+   
+    <script src="./pacmenfactory.js"></script>
 </body>
 
 </html>
 <script>
-var pos = 0;
+let pos = 0;
 const pacArray = [
-  ['./images/PacMan1.png', './images/PacMan2.png'],
-  ['./images/PacMan3.png', './images/PacMan4.png'],
+  ['PacMan1.png', 'PacMan2.png'],
+  ['PacMan3.png', 'PacMan4.png'],
 ];
-var direction = 0;
-const pacMen = [];
+let direction = 0;
+const pacMen = []; 
+
 
 function setToRandom(scale) {
   return {
@@ -30,20 +28,26 @@ function setToRandom(scale) {
   };
 }
 
+
 function makePac() {
- 
-  let velocity = setToRandom(10);
-  let position = setToRandom(200);
   
+  let velocity = setToRandom(10); // {x:?, y:?}
+  let position = setToRandom(200);
+
+ 
   let game = document.getElementById('game');
   let newimg = document.createElement('img');
   newimg.style.position = 'absolute';
-  newimg.src = './images/PacMan1.png';
+  newimg.src = 'PacMan1.png';
   newimg.width = 100;
   newimg.style.left = position.x;
   newimg.style.top = position.y;
+  
+
+ 
   game.appendChild(newimg);
 
+ 
   return {
     position,
     velocity,
@@ -65,16 +69,9 @@ function update() {
 }
 
 function checkCollisions(item) {
-  if (
-    item.position.x + item.velocity.x + item.newimg.width > window.innerWidth ||
-    item.position.x + item.velocity.x < 0
-  )
-    item.velocity.x = -item.velocity.x;
-  if (
-    item.position.y + item.velocity.y + item.newimg.height > window.innerHeight ||
-    item.position.y + item.velocity.y < 0
-  )
-    item.velocity.y = -item.velocity.y;
+  
+  if (item.position.x + item.velocity.x + item.newimg.width > window.innerWidth || item.position.x + item.velocity.x < 0) item.velocity.x = -item.velocity.x;
+  if (item.position.y + item.velocity.y + item.newimg.height > window.innerHeight || item.position.y + item.velocity.y < 0) item.velocity.y = -item.velocity.y;
 }
 
 function makeOne() {
@@ -85,5 +82,4 @@ function makeOne() {
 if (typeof module !== 'undefined') {
   module.exports = { checkCollisions, update, pacMen };
 }
-
 </script>

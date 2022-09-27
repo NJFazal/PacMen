@@ -1,4 +1,3 @@
-
 <script>
 var pos = 0;
 const pacArray = [

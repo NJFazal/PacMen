@@ -1,16 +1,3 @@
-<html>
-
-<body>
-    <div id='game'>
-        <button onclick='makeOne()' width='200' height='30'>Add PacMan</button>
-        <button onclick='update()' width='200' height='30'>Start Game</button>
-    </div>
-
-   
-    <script src="./pacmenfactory.js"></script>
-</body>
-
-</html>
 <script>
 let pos = 0;
 const pacArray = [
